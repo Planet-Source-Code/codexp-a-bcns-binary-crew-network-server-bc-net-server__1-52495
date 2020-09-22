@@ -1,0 +1,72 @@
+
+
+  ---------------------------------------
+       BC Net Server ReadMe File
+  ---------------------------------------
+  Created by CodeXP on 28.04.2004
+
+
+
+
+Contents of this File:
+
+  1. What is BC Net Server (BCNS) ?
+
+  2. BCNS Project Files
+
+
+
+1. What is BC Net Server (BCNS) ?
+   ------------------------------
+
+  The full name is "Binary Crew Network Server".
+
+  It is a Server that manages the BCNS Modules
+  which will be shared for using by the Clients.
+
+  Modules are ActiveX DLL Files. Those Modules can
+  be loaded and unloaded by Server. Each of those
+  Modules must have the BCNS Module Interface.
+
+  The BCNS Module Interface provides some Procedures and
+  Properties. Which can be used for Data exchange between
+  the Module and the Client
+
+  Commands to load and unload Modules on Server:
+
+  Load Module:
+
+  Syntax:
+  |> modules load <mudule name>
+  Example:
+  |> modules load Comm
+
+  UnLoad Module:
+
+  Syntax:
+  |> modules unload <mudule name>
+  Example:
+  |> modules unload Comm
+
+
+
+2. BCNS Project Files
+   ------------------
+
+  2.1 Folders
+  
+  Docs           - contains Project Documentation (todo)
+  Forms          - contains all Project Forms
+  Modules        - contains all Project Modules and Classes
+
+  2.2 Project Files
+
+  BCNetServer.vbp    - BC Net Server Project File.
+  BCConsole.vbp      - Client Console for Testings and Debuging.
+                       This Project is using the Comm Module.
+  mod_Comm.vbp       - Our first Module called Comm". It will be
+                       used for Text based Communication.
+  mod_SDK.vbp        - BCNS Module SDK what can help you to code
+                       your own Modules for BCNS Application.
+
+
