@@ -1,0 +1,405 @@
+<html>
+<head>
+<title>BC Net Server SDK</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.Titel {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 16px;
+	font-weight: bolder;
+	text-decoration: none;
+	color: #006699;
+	padding: 10px;
+}
+
+body {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	padding: 10px;
+	margin: 0px;
+}
+
+th,td,tr
+{
+	text-align: left;
+}
+
+a {
+	text-decoration: none;
+	cursor: hand;
+}
+
+.CELL1 {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: left;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.CELL2 {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+.CELL3 {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+.CELL4 {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+.CELL5 {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: left;
+	padding-right: 10px;
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+.ILLT {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.copyright {
+	font-family: Tahoma, Verdana, "Trebuchet MS";
+	font-size: 12px;
+	font-style: italic;
+	text-decoration: none;
+	color: #000066;
+}
+-->
+</style>
+</head>
+
+<body>
+<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td background="BCNS.SDK.FILES/ROL.jpg" width="7" height="6"></td>
+	<td background="BCNS.SDK.FILES/RO.jpg" height="6"></td>
+	<td background="BCNS.SDK.FILES/ROR.jpg" width="7" height="6"></td>
+	</tr>
+	<tr>
+	<td background="BCNS.SDK.FILES/RR.jpg" height="24"></td>
+	  <td background="BCNS.SDK.FILES/RM.jpg"  height="24" class="Titel">BC Net Server 
+      SDK (german)</td>
+	<td background="BCNS.SDK.FILES/RL.jpg" height="24"></td>
+	</tr>
+	<tr>
+	<td background="BCNS.SDK.FILES/RUL.jpg" width="7" height="6"></td>
+	<td background="BCNS.SDK.FILES/RU.jpg" height="6"></td>
+	<td background="BCNS.SDK.FILES/RUR.jpg" width="7" height="6"></td>
+	</tr>
+</table>
+<br>
+<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td background="BCNS.SDK.FILES/ROL.jpg" width="7" height="6"></td>
+	<td background="BCNS.SDK.FILES/RO.jpg" height="6"></td>
+	<td background="BCNS.SDK.FILES/ROR.jpg" width="7" height="6"></td>
+	</tr>
+	<tr>
+	<td background="BCNS.SDK.FILES/RR.jpg" height="24"></td>
+	<td background="BCNS.SDK.FILES/RM.jpg"  height="24">
+		<table width="100%">
+        <tr> 
+          <th colspan="9">Inhalt:</th>
+        </tr>
+        <tr> 
+          <th><a href="#intro">A.</a></th>
+          <th><a href="#intro">Einleitung</a></th>
+        </tr>
+        <tr> 
+          <th><a href="#interface">1.</a></th>
+          <th><a href="#interface">BC Net Server Modul Schnittstelle</a></th>
+        </tr>
+        <tr> 
+          <th><a href="#reference">2.</a></th>
+          <th><a href="#reference">BC Net Server Modul Referenz</a></th>
+        </tr>
+        <tr> 
+          <th><a href="#functions">3.</a></th>
+          <th><a href="#functions">Schnittstellen-Funktionen</a></th>
+        </tr>
+        <tr> 
+          <th>3.1</th>
+          <th>Schnittstellen-Funktionen des Moduls</th>
+        </tr>
+        <tr> 
+          <th>3.2</th>
+          <th>Schnittstellen-Funktionen des BCNS Servers</th>
+        </tr>
+      </table>
+	</td>
+	<td background="BCNS.SDK.FILES/RL.jpg" height="24"></td>
+	</tr>
+	<tr>
+	<td background="BCNS.SDK.FILES/RUL.jpg" width="7" height="6"></td>
+	<td background="BCNS.SDK.FILES/RU.jpg" height="6"></td>
+	<td background="BCNS.SDK.FILES/RUR.jpg" width="7" height="6"></td>
+	</tr>
+</table>
+<br>
+<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td background="BCNS.SDK.FILES/ROL.jpg" width="7" height="6"></td>
+	<td background="BCNS.SDK.FILES/RO.jpg" height="6"></td>
+	<td background="BCNS.SDK.FILES/ROR.jpg" width="7" height="6"></td>
+	</tr>
+	<tr>
+	<td background="BCNS.SDK.FILES/RR.jpg" height="24"></td>
+	<td background="BCNS.SDK.FILES/RM.jpg"  height="24">
+		<table width="100%">
+			<tr>
+					<th colspan="9"><a name="intro">A. Einleitung</a></th>
+			</tr>
+			<tr>
+					<td><p>Der BCNS Server ist ein Netzwerk basierter Modul-Manager.<br>
+              Seine Aufgaben sind Modulenverwaltung und Nachrichtenaustausch zwischen 
+              Benutzer (Client) und den geladenen Modulen. Diese Nachrichten werden 
+              an bestimmte Module weitergeleitet und da ausgef&uuml;hrt, wobei 
+              auch jedes Modul in der Lage ist solche Nachrichten zur&uuml;ck 
+              an den Benutzer zu senden.</p>
+            <p> Diese SDK beschreibt den Umgang mit der Modul Schnittstelle von 
+              BCNS Server und enth&auml;lt ein Beispiel Projekt. Hier erfahren 
+              Sie wie man ein Modul f&uuml;r BCNS Server schreiben und implementieren 
+              kann. BCNS Module sind vergleichbar mit Plugins. Module werden in 
+              den BCNS Server geladen und nachdem sie gestartet wurden, den Clients 
+              zu Verf&uuml;gung gestellt.</p>
+            </td>
+        </tr>
+		</table>
+		<br>
+		<table width="100%">
+			<tr>
+          <th colspan="9"><a name="interface">1. BC Net Server Modul Schnittstelle</a></th>
+        </tr>
+			<tr>
+          <td><p>Der BCNS Server besitzt eine Modul Schnittstelle, die es erm&ouml;glicht 
+              Daten zwischen dem Server und Modulen auszutauschen. Hierbei wird 
+              die COM/ActiveX Schnittstelle des Betriebsystems Microsoft Windows 
+              verwendet. Die Module werden als Objekte in den Server geladen und 
+              danach gestartet. Die Module lassen sich ein- und ausschalten, wodurch 
+              einzelne Module tempor&auml;r deaktiviert werden k&ouml;nnen.</p>
+            <p>BCNS Modul Schnittstelle ist mit Funktionen ausgestattet, die es 
+              erm&ouml;glichen Daten auszutauschen, oder bestimmte Aktionen auszuf&uuml;hren. 
+              Mit Hilfe von dieser Schnittstelle lassen sich Client-Verbindungen 
+              steuern und Nachrichten zwischen Modul und Benutzer austauschen.</p>
+            <p>Diese Schnittstellen-Funktionen sind unter Punkt 2. &quot;BC Net 
+              Server Modul Referenz&quot; detailliert aufgelistet. </p>
+            </td>
+        </tr>
+		</table>
+		<br>
+		<table width="100%">
+			<tr>
+          <th colspan="9"><a name="reference">2. BC Net Server Modul Referenz</a></th>
+        </tr>
+			<tr>
+          <td><p>BCNS Server Module sind Microsoft Windows ActiveX DLL-Dateien, 
+              die eine globale Klasse namens &quot;Module&quot; mit Schnittstellen-Funktionen 
+              bereitstellen.<br>
+              Jedes Modul muss intern eine globale Klasse namens &quot;Module&quot; 
+              besitzen. Diese Klasse sollte bestimmte Schnittstellen-Funktionen 
+              besitzen, die den Datenaustausch und den Gebrauch von Server-Ereignissen 
+              erm&ouml;glichen.<br>
+              Zus&auml;tzlich muss ein Objekt vorhanden sein der einen Referenz-Objekt 
+              auf die BCNS Server Modul Schnittstelle darstellt. Dieses Referenz-Objekt 
+              wird an das Modul, beim Aufruf der StartModule() Aktion, als einziger 
+              Parameter &uuml;bergeben. </p>
+            <p>Hier werden diese so genannte Schnittstellen-Funktionen genau beschrieben.</p>
+            <p>Die Schnittstellen-Funktionen sind in drei Typen aufgeteilt:</p>
+            <p> 1. Eigenschaften: Funktionen die einen Wert zur&uuml;ckgeben m&uuml;ssen 
+              (Function oder Property).<br>
+              2. Ereignisse: Funktionen die auf bestimmte Ereignisse reagieren 
+              (Sub oder Function).<br>
+              3. Aktionen: Funktionen die eine bestimmte Aktion durchf&uuml;hren 
+              (Sub oder Function).</p>
+            <p>Alle folgende Schnittstellen-Funktionen sollten in der globalen 
+              Klasse &quot;Module&quot; vorhanden sein und werden ausschlie&szlig;lich 
+              vom Server aufgerufen:</p>
+            <table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <tr>
+                <a name="functions"></a>
+                <th colspan="9">Schnittstellen-Funktionen des Moduls:</th>
+              </tr>
+              <tr style="font-weight: normal;"> 
+                <th width="9%" class="CELL1">Name</th>
+                <th width="17%" class="CELL1">Typ</th>
+                <th class="CELL1" width="100%">Beschreibung</th>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>StartModule</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_a.jpg" width="16" height="16"> 
+                  Aktion</td>
+                <td class="CELL2">Wird aufgerufen, um das Modul zu starten.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>StopModule</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_a.jpg" width="16" height="16"> 
+                  Aktion</td>
+                <td class="CELL2">Wird aufgerufen, um das Modul anzuhalten.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>Execute</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_e.jpg" width="16" height="16"> 
+                  Ereignis</td>
+                <td class="CELL2">Tritt auf, wenn eine Nachricht vom Benutzer 
+                  erhalten wurde.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>Connected</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_e.jpg" width="16" height="16"> 
+                  Ereignis</td>
+                <td class="CELL2">Tritt auf, wenn ein Benutzer verbunden wurde.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>Disconnected</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_e.jpg" width="16" height="16"> 
+                  Ereignis</td>
+                <td class="CELL2">Tritt auf, wenn ein Benutzer getrennt wurde.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>Started</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_p.jpg" width="16" height="16"> 
+                  Eigenschaft (Bool)</td>
+                <td class="CELL2">Gibt einen Wert zur&uuml;ck, der bestimmt, ob 
+                  das Modul geladen ist.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>ModuleName</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_p.jpg" width="16" height="16"> 
+                  Eigenschaft (String)</td>
+                <td class="CELL2">Gibt den Namen des Moduls zur&uuml;ck.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>ModuleVersion</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_p.jpg" width="16" height="16"> 
+                  Eigenschaft (String)</td>
+                <td class="CELL2">Gibt die Versionsnummer vom Modul zur&uuml;ck.</td>
+              </tr>
+            </table>
+            <div class="ILLT"><b>Tabelle 2.1:</b> Schnittstellen-Funktionen des Moduls</div><br>
+            <p>Alle folgende Schnittstellen-Funktionen werden vom BCNS Server 
+              zu Verf&uuml;gung gestellt und k&ouml;nnen Modul-weit beim Referenz-Objekt 
+              aufgerufen werden:</p>
+            <table width="100%" border="0" cellspacing="1" cellpadding="0">
+              <tr> 
+                <th colspan="9">Schnittstellen-Funktionen des BCNS Servers:</th>
+              </tr>
+              <tr style="font-weight: normal;"> 
+                <th width="9%" class="CELL1">Name</th>
+                <th width="17%" class="CELL1">Typ</th>
+                <th class="CELL1" width="100%">Beschreibung</th>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>Disconnect</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_a.jpg" width="16" height="16"> 
+                  Aktion</td>
+                <td class="CELL2">Kann aufgerufen werden, um die Verbindung zu 
+                  trennen.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>SendLine</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_a.jpg" width="16" height="16"> 
+                  Aktion</td>
+                <td class="CELL2">Kann aufgerufen werden, um Nachricht an einen 
+                  Benutzer zu senden.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>UpTime</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_p.jpg" width="16" height="16"> 
+                  Eigenschaft (Long)</td>
+                <td class="CELL2">Gibt die Verbindungsdauer in Sekunden zur&uuml;ck.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>Version</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_p.jpg" width="16" height="16"> 
+                  Eigenschaft (String)</td>
+                <td class="CELL2">Gibt die Versionsnummer des Servers zur&uuml;ck.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>HostIP</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_p.jpg" width="16" height="16"> 
+                  Eigenschaft (String)</td>
+                <td class="CELL2">Gibt die IP-Adresse des entfernten Rechners 
+                  zur&uuml;ck.</td>
+              </tr>
+              <tr> 
+                <td class="CELL2" nowrap>HostName</td>
+                <td class="CELL2" nowrap><img src="BCNS.SDK.FILES/ico_p.jpg" width="16" height="16"> 
+                  Eigenschaft (String)</td>
+                <td class="CELL2">Gibt den Namen des entfernten Rechners zur&uuml;ck.</td>
+              </tr>
+            </table> 
+            <div class="ILLT"><b>Tabelle 2.2:</b> Schnittstellen-Funktionen des 
+              BCNS Servers.</div>
+					  <br>
+          </td>
+        </tr>
+		</table>
+	</td>
+	<td background="BCNS.SDK.FILES/RL.jpg" height="24"></td>
+	</tr>
+	<tr>
+	<td background="BCNS.SDK.FILES/RUL.jpg" width="7" height="6"></td>
+	<td background="BCNS.SDK.FILES/RU.jpg" height="6"></td>
+	<td background="BCNS.SDK.FILES/RUR.jpg" width="7" height="6"></td>
+	</tr>
+</table>
+<br>
+<table cellpadding="0" cellspacing="0" width="100%">
+	<tr>
+	<td background="BCNS.SDK.FILES/ROL.jpg" width="7" height="6"></td>
+	<td background="BCNS.SDK.FILES/RO.jpg" height="6"></td>
+	<td background="BCNS.SDK.FILES/ROR.jpg" width="7" height="6"></td>
+	</tr>
+	<tr>
+	<td background="BCNS.SDK.FILES/RR.jpg" height="24"></td>
+	  <td background="BCNS.SDK.FILES/RM.jpg"  height="24"><div class="copyright">BC 
+        Net Server SDK, Copyright (C)2004 by CodeXP, Dokument verfasst von CodeXP 
+        (<a href="mailto:CodeXP@Lycos.de">CodeXP@Lycos.de</a>) am 23.03.2004.</div></td>
+	<td background="BCNS.SDK.FILES/RL.jpg" height="24"></td>
+	</tr>
+	<tr>
+	<td background="BCNS.SDK.FILES/RUL.jpg" width="7" height="6"></td>
+	<td background="BCNS.SDK.FILES/RU.jpg" height="6"></td>
+	<td background="BCNS.SDK.FILES/RUR.jpg" width="7" height="6"></td>
+	</tr>
+</table>
+</body>
+</html>

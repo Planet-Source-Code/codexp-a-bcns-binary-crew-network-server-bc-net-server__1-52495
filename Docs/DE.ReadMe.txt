@@ -1,0 +1,73 @@
+
+
+  ---------------------------------------
+       BC Net Server ReadMe Datei
+  ---------------------------------------
+  Erstellt von CodeXP am 28.04.2004
+  
+
+
+
+Inhalt dieser Datei:
+
+  1. Was ist BC Net Server (BCNS) ?
+
+  2. BCNS Projekt Dateien
+
+
+
+1. Was ist BC Net Server (BCNS) ?
+   ------------------------------
+
+  BCNS ist ein Akronym für "Binary Crew Network Server".
+
+  Es ist ein Server der die BCNS Module verwaltet
+  und diese den Clients zur Verfügung stellt.
+
+  Module sind ActiveX DLL Dateien. Diese Module können
+  vom Server geladen und entladen werden. Jedes dieser
+  Module muss die BCNS Modul Schnittstelle besitzen.
+
+  Die BCNS Mudul Schnittstelle stellt einige Prozeduren und 
+  Eigenschaften zur Verfügung. Diese Schnittstelle ermöglicht
+  den Datenaustausch zwischen dem Modul und den Client.
+
+  Befehle zum Laden und Entladen der Module auf dem Server:
+
+  Modul laden:
+
+  Syntax:
+  |> modules load <Mudulname>
+  Beispiel:
+  |> modules load Comm
+
+  Modul entladen:
+
+  Syntax:
+  |> modules unload <Mudulname>
+  Beispiel:
+  |> modules unload Comm
+
+
+
+2. BCNS Projekt Dateien
+   --------------------
+
+  2.1 Verzeichnisse
+  
+  Docs           - beinhaltet Projekt Dokumentation (zu erledigen)
+  Forms          - beinhaltet alle Projekt Formulare
+  Modules        - beinhaltet alle Projekt Module und Klassen
+
+  2.2 Projekt Dateien
+
+  BCNetServer.vbp    - BC Net Server Projekt Datei.
+  BCConsole.vbp      - Client Console für Versuche und Debuging.
+                       Dieser Projekt benutzt die Comm Module.
+  mod_Comm.vbp       - Unser erstes Modul genannt "Comm". Wird
+                       verwendet für Text basierte Kommunikation.
+  mod_SDK.vbp        - BCNS Module SDK ist eine Vorlage für die
+                       Entwicklung der Module. Es enthält bereits
+                       die vollständige BCNS-Modul-Schnittstelle.
+
+
